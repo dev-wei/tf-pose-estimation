@@ -3,6 +3,7 @@ import logging
 import sys
 import time
 
+import tensorflow as tf
 from tf_pose import common
 import cv2
 import numpy as np

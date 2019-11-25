@@ -38,8 +38,9 @@ if __name__ == '__main__':
         print("Error opening video stream or file")
     while cap.isOpened():
         ret_val, image = cap.read()
-
+        print(type(image))
         humans = e.inference(image)
+        
         if not args.showBG:
             image = np.zeros(image.shape)
         image = TfPoseEstimator.draw_humans(image, humans, imgcopy=False)

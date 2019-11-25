@@ -1,0 +1,29 @@
+name: tf-pose-estimation
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - python
+  - Cython
+  - numpy
+  - numba
+  - pandas
+  - scipy
+  - scikit-learn
+  - tqdm
+  - matplotlib
+  - pip
+  - dill
+  - scikit-image
+  - scipy
+  - gcc
+  - tensorflow=1.15.0
+  - opencv
+  - pip:
+    - argparse
+    - fire
+    - psutil
+    - pycocotools
+    - requests
+    - slidingwindow
+
